@@ -1,0 +1,18 @@
+{% extends 'enroll/base.html' %}
+{% block content %}
+    
+        <h4 class="text-center alert alert-info"><a>login</a> </h4>
+        <form action="" method="POST" class="text-center alert alert-info">
+            <div class="mb-3">
+
+
+
+             {{form.as_p}}<br>
+             {% csrf_token %}<br>
+            </div>
+            
+             <input type="submit" class="btn btn-primary" value="login">
+        </form>
+    
+
+{% endblock content %}
